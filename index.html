@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logos-circle.png" class="profile-img" alt="Profile">
+                INBIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Testimonial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Clients</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="cart-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge">0</span>
+                </div>
+                <button class="buy-now">BUY NOW</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section class="hero py-5">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6 offset-md-1">
+                    <p class="welcome-text">WELCOME TO MY WORLD</p>
+                    <h1>
+                        Hi, I'm <span class="highlight">Jone Lee</span><br>
+                        a <span class="highlight"><span id="typed-text"></span></span>
+                    </h1>
+                    <p class="description">
+                        I use animation as a third dimension by which to simplify experiences and guide through each and
+                        every interaction.
+                        I’m not adding motion just to spruce things up, but doing it in ways that matter.
+                    </p>
+                    <div class="d-flex mt-4">
+                        <div class="me-5">
+                            <p>FIND WITH ME</p>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <div>
+                            <p>BEST SKILL ON</p>
+                            <img src="images/icons-01.png" alt="InVision">
+                            <img src="images/icons-02.png" alt="Sketch">
+                            <img src="images/icons-03.png" alt="Figma">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center">
+                    <img src="images/banner-01-600x823.png" class="profile-img-main img-fluid" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typed JS Effect -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed("#typed-text", {
+            strings: ["UI/UX Designer.", "Developer.", "Professional Coder."],
+            typeSpeed: 40,
+            backSpeed: 30,
+            backDelay: 1500,
+            loop: true
+        });
+    </script>
+
+    <!-- Divider -->
+    <div class="container-fluid">
+        <hr style="color: black;">
+    </div>
+
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <div class="container-fluid">
+            <p class="section-tag text-uppercase text-primary fw-bold mb-2">FEATURES</p>
+            <h2 class="section-title mb-5">What I Do</h2>
+            <div class="row g-4">
+                <!-- Feature Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card p-4 text-center">
+                        <i class="fas fa-align-left fa-2x mb-3"></i>
+                        <h4>Business Strategy</h4>
+                        <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+                        <span class="arrow">&rarr;</span>
+                    </div>
+                </div>
+                <!-- Feature Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card p-4 text-center">
+                        <i class="fas fa-book-open fa-2x mb-3"></i>
+                        <h4>App Development</h4>
+                        <p>We’ll handle everything from app development until it is time to make your project live.</p>
+                        <span class="arrow">&rarr;</span>
+                    </div>
+                </div>
+                <!-- Feature Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card p-4 text-center">
+                        <i class="fas fa-tv fa-2x mb-3"></i>
+                        <h4>Business Strategy</h4>
+                        <p>We’ll help you optimize your business processes to maximize profitability.</p>
+                        <span class="arrow">&rarr;</span>
+                    </div>
+                </div>
+                <!-- Feature Card 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card p-4 text-center">
+                        <i class="fas fa-mobile-alt fa-2x mb-3"></i>
+                        <h4>Mobile App</h4>
+                        <p>Using our expertise in mobile application development to create pixel-perfect designs.</p>
+                        <span class="arrow">&rarr;</span>
+                    </div>
+                </div>
+                <!-- Feature Card 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card p-4 text-center">
+                        <i class="fas fa-database fa-2x mb-3"></i>
+                        <h4>SEO Optimisation</h4>
+                        <p>Our SEO services will help you get to the top of the ranks and stay there!</p>
+                        <span class="arrow">&rarr;</span>
+                    </div>
+                </div>
+                <!-- Feature Card 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card p-4 text-center">
+                        <i class="fas fa-cube fa-2x mb-3"></i>
+                        <h4>UX Consulting</h4>
+                        <p>A UX consultant is responsible for many of the same tasks as a UI/UX designer.</p>
+                        <span class="arrow">&rarr;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container-fluid" style="color: black;margin-bottom: 20px;">
+        <hr>
+    </div>
+
+    <section class="portfolio-section g-4">
+        <div class="container-fluid " style="padding: 80px;">
+            <p class="section-subtitle text-center" style="color: #e91e63;">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK
+            </p>
+            <h2 class="section-title text-center" style="margin-left: 20px;">My Portfolio</h2>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card p-4">
+                        <img src="images/portfolio-large-01-340x250.jpg" alt="NFT App">
+                        <div class="category">Gallery</div>
+                        <div class="title">NFT Dashboard Application Development.</div>
+                        <div class="likes">❤ 1137</div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card p-4">
+                        <div class="lock-icon">🔒</div>
+                        <div class=" cat-lok">Video</div>
+                        <div class="title tit-lok">Online Food Delivery Mobile App Design.</div>
+                        <div class="likes">❤ **</div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card p-4">
+                        <img src="images/portfolio-large-03-340x250.jpg" alt="Travel App">
+                        <div class="category">External Link</div>
+                        <div class="title">Travel App Design Creativity & Application.</div>
+                        <div class="likes">❤ 542</div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card p-4">
+                        <img src="images/portfolio-04-1-768x576.jpg" alt="Fitness App">
+                        <div class="category">Gallery</div>
+                        <div class="title">Fitness App UI/UX Concept.</div>
+                        <div class="likes">❤ 750</div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card p-4">
+                        <img src="images/portfolio-06.jpg" alt="Social Media App">
+                        <div class="category">External Link</div>
+                        <div class="title">Social Media App UI Kit.</div>
+                        <div class="likes">❤ 680</div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card p-4">
+                        <div class="lock-icon">🔒</div>
+                        <div class=" cat-lok">Prototype</div>
+                        <div class="title tit-lok">E-Commerce App Design.</div>
+                        <div class="likes">❤ **</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid" style="color: black;">
+        <hr>
+    </div>
+
+
+    <div class="container resume-me" style="padding: 0px;">
+        <div class="resume-header">
+            <h6 class="text-danger">7+ YEARS OF EXPERIENCE</h6>
+            <h1>My Resume</h1>
+        </div>
+        <ul class="nav nav-tabs ">
+            <li class="nav-item">
+                <a class="nav-link " href="#">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Professional Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Interview</a>
+            </li>
+        </ul>
+        <div class="row resume-section">
+            <div class="col-md-6">
+                <div style="margin: 10px 0 20px 0;">
+                    <p style="color:#ff4757;">1998 - 2010</p>
+                    <h2 class="text-white" style="font-size: 40px;">Education Quality</h2>
+                </div>
+                <div class="timeline">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-header">BSc In Computer Science <span class="badge">3.9/4</span></h5>
+                            <p>University of DW (2006 - 2010)</p>
+                            <p>The training provided by universities in order to prepare people to work in various
+                                sectors of the economy or areas of culture.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-header">AS - Science & Information <span class="badge">4.2/5</span></h5>
+                            <p>Superking College (2001 - 2005)</p>
+                            <p>Higher education is tertiary education leading to award of an academic degree.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-header">Secondary School Education <span class="badge">5.0/5</span></h5>
+                            <p>Kingstar Secondary School (1998 - 2000)</p>
+                            <p>Secondary education or post-primary education covers two phases on the International
+                                Standard Classification of Education scale.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div style="margin: 10px 0 20px 0;">
+                    <p style="color:#ff4757;">2010 - 2022</p>
+                    <h2 class="text-white" style="font-size: 40px;">Job Experience</h2>
+                </div>
+                <div class="timeline">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-header">Sr. Software Engineer <span class="badge">USA</span></h5>
+                            <p>Google Out Tech (2017 - Present)</p>
+                            <p>Google's hiring process is an important part of our culture.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-header">Web Developer & Trainer <span class="badge">MALAYSIA</span></h5>
+                            <p>Apple Developer Team (2012 - 2016)</p>
+                            <p>A popular destination with a growing number of highly qualified homegrown graduates.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-header">Front-end Developer <span class="badge">INDIA</span></h5>
+                            <p>Nike (2008 - 2010)</p>
+                            <p>The India economy has grown strongly over recent years, having transformed itself from a
+                                producer and innovation-based economy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="color: black;margin-top: 60px;">
+        <hr>
+    </div>
+
+
+    <div class="testimonial-section">
+        <p class="testimonial-header">What Clients Say</p>
+        <h1 class="fw-bold">Testimonial</h1>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <div class="custom-card testy p-4">
+                                <img src="images/final-home-1st.png" alt="Profile">
+                                <div class="category testimonial-header" style="font-size: 10px;">RAINBOW-THEMES</div>
+                                <div class="title testimonial-title" style="font-size: 20px;">Nevine Acotanza</div>
+                                <p style="font-size: 10px;">Cheif Operating Office</p>
+
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <img src="images/quote.png" alt="quote">
+                            <div class="ican" style="display: flex;">
+                                <div
+                                    style="background-color: #212428;box-shadow: 0px 10px 20px rgb(0,0,0,0.5);width: 50px;height: 50px;padding-top: 10px;">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </div>
+                                <div
+                                    style="background-color: #212428;box-shadow: 0px 10px 20px rgb(0,0,0,0.5);width: 50px;height: 50px;padding-top: 10px;">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-text" style="display:block;margin-left: -550px;margin-top: 100px;">
+                            <div class="card-custom">
+                                <h5>Web App Development.</h5>
+                                <p class="text-grey">Upwork - Mar 4, 2016 - Aug 30, 2021</p>
+                                <div class="divider"></div>
+                                <div class="stars">
+                                    <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                                </div>
+                                <p>
+                                    Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales.
+                                    Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.
+                                    Ut tincidunt est ac dolor aliquam sodales phasellus smauris test.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <div class="custom-card testy p-4">
+                                <img src="images/final-home-2nd-1.png" alt="Profile">
+                                <div class="category testimonial-header" style="font-size: 10px;">RAINBOW-THEMES</div>
+                                <div class="title testimonial-title" style="font-size: 20px;">Cara Delenvinge</div>
+                                <p style="font-size: 10px;">Cheif Operating Office</p>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <img src="images/quote.png" alt="quote">
+                            <div class="ican" style="display: flex;">
+                                <div
+                                    style="background-color: #212428;box-shadow: 0px 10px 20px rgb(0,0,0,0.5);width: 50px;height: 50px;padding-top: 10px;">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </div>
+                                <div
+                                    style="background-color: #212428;box-shadow: 0px 10px 20px rgb(0,0,0,0.5);width: 50px;height: 50px;padding-top: 10px;">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-text" style="display:block;margin-left: -550px;margin-top: 100px;">
+                            <div class="card-custom">
+                                <h5>Travel Mobile App Design.</h5>
+                                <p class="text-grey">via Upwork - Mar 4, 2015 - Aug 30, 2021 test</p>
+                                <div class="divider"></div>
+                                <div class="stars">
+                                    <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                                </div>
+                                <p>
+                                    Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales.
+                                    Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.
+                                    Ut tincidunt est ac dolor aliquam sodales phasellus smauris test.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <div class="custom-card testy p-4">
+                                <img src="images/final-home-3rd.png" alt="Profile">
+                                <div class="category testimonial-header" style="font-size: 10px;">BOUND-TROLOLA</div>
+                                <div class="title testimonial-title" style="font-size: 20px;">Jone Duone Joe</div>
+                                <p style="font-size: 10px;">Operating Officer</p>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <img src="images/quote.png" alt="quote">
+                            <div class="ican" style="display: flex;">
+                                <div
+                                    style="background-color: #212428;box-shadow: 0px 10px 20px rgb(0,0,0,0.5);width: 50px;height: 50px;padding-top: 10px;">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </div>
+                                <div
+                                    style="background-color: #212428;box-shadow: 0px 10px 20px rgb(0,0,0,0.5);width: 50px;height: 50px;padding-top: 10px;">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-text" style="display:block;margin-left: -550px;margin-top: 100px;">
+                            <div class="card-custom">
+                                <h5>Android App Development.</h5>
+                                <p class="text-grey">via Upwork - Mar 4, 2015 - Aug 30, 2021 test</p>
+                                <div class="divider"></div>
+                                <div class="stars">
+                                    <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                                </div>
+                                <p>
+                                    Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales.
+                                    Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.
+                                    Ut tincidunt est ac dolor aliquam sodales phasellus smauris test.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="color: black;margin-bottom: 60px;">
+        <hr>
+    </div>
+
+
+    <div class="clients-container">
+        <h2 class="text-danger">Popular Clients</h2>
+        <h1 class="fw-bold">Awesome Clients</h1>
+        <div class="row mt-4">
+            <!-- Left Category Section -->
+            <div class="col-md-3" style="position: sticky;">
+                <div class="category-box">
+                    <a href="#">JavaScript</a>
+                    <a href="#">Product Design</a>
+                    <a href="#">WordPress</a>
+                    <a href="#">HTML to React</a>
+                    <a href="#">React to Laravel</a>
+                    <a href="#">Python</a>
+                </div>
+            </div>
+
+            <!-- Right Clients Section -->
+            <div class="col-md-9 rightraw">
+                <div class="row g-3 mb-4">
+
+                    <div class="col-md-4">
+                        <div class="client-card">
+                            <img src="images/client2.png" alt="Client Logo">
+                            <hr>
+                            <div class="client-name">John Due</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="client-card">
+                            <img src="images/client1-1.png" alt="Client Logo">
+                            <hr>
+                            <div class="client-name">Smiths Marth</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="client-card">
+                            <img src="images/client3.png" alt="Client Logo">
+                            <hr style="margin-top: 47px;">
+                            <div class="client-name">Add Dev</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row g-3 mb-4">
+
+                    <div class="col-md-4">
+                        <div class="client-card">
+                            <img src="images/client3.png" alt="Client Logo">
+                            <hr style="margin-top: 44px;">
+                            <div class="client-name">John Due</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="client-card">
+                            <img src="images/client4.png" alt="Client Logo">
+                            <hr style="margin-top: 27px;">
+                            <div class="client-name">Smiths Marth</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="client-card">
+                            <img src="images/client1-1.png" alt="Client Logo">
+                            <hr>
+                            <div class="client-name">Add Dev</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row g-3 mb-4">
+
+                    <div class="col-md-4">
+                        <div class="client-card">
+                            <img src="images/client1-1.png" alt="Client Logo">
+                            <hr style="margin-top: 13px;">
+                            <div class="client-name">John Due</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="client-card">
+                            <img src="images/client2.png" alt="Client Logo">
+                            <hr>
+                            <div class="client-name">Smiths Marth</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="client-card">
+                            <img src="images/client3.png" alt="Client Logo">
+                            <hr style="margin-top: 45px;">
+                            <div class="client-name">Add Dev</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row g-3 mb-4">
+
+                    <div class="col-md-4">
+                        <div class="client-card">
+                            <img src="images/client4.png" alt="Client Logo">
+                            <hr style="margin-top: 25px;">
+                            <div class="client-name">John Due</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="client-card">
+                            <img src="images/client3.png" alt="Client Logo">
+                            <hr style="margin-top: 45px;">
+                            <div class="client-name">Smiths Marth</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="client-card">
+                            <img src="images/client1-1.png" alt="Client Logo">
+                            <hr>
+                            <div class="client-name">Add Dev</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid" style="color: black;margin-top: 100px;margin-bottom: -50px;">
+        <hr>
+    </div>
+
+
+    <div class="container-fluid p-5">
+        <div class="row p-4">
+            <div class="col-lg-4 p-5">
+                <div class="sticky-section">
+                    <h5 class="text-danger">PRICING</h5>
+                    <h1 style="font-size:60px;">My Pricing</h1>
+                </div>
+            </div>
+            <div class="col-lg-8 p-5">
+                <div class="pricing-container mt-4">
+
+                    <div class="tabs">
+                        <div class="active">Static</div>
+                        <div>Standard</div>
+                        <div>Premium</div>
+                    </div>
+                    <h3 class="mt-5">Make Your Single Page</h3>
+                    <p>Elementor / WPBakery</p>
+                    <div class="price-box">$30.00</div>
+                    <p class="mt-4 mb-5">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks
+                        as necessary</p>
+                    <div class="row righticon">
+                        <div class="col-6 ullu">
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> 1 Page with Elementor</li>
+                                <li><i class="fa-solid fa-check"></i> Design Customization</li>
+                                <li><i class="fa-solid fa-check"></i> Responsive Design</li>
+                                <li><i class="fa-solid fa-check"></i> Content Upload</li>
+                                <li><i class="fa-solid fa-check"></i> 2 Plugins/Extensions</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 ullu">
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> Multipage Elementor</li>
+                                <li><i class="fa-solid fa-check"></i> Design Figma</li>
+                                <li><i class="fa-solid fa-check"></i> Maintain Design</li>
+                                <li><i class="fa-solid fa-check"></i> Content Upload</li>
+                                <li><i class="fa-solid fa-check"></i> 8 Plugins/Extensions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="order-btn mt-5">ORDER NOW →</div>
+                    <p class="text-center mt-5" style="color: gray;"><i class="fa-solid fa-clock"></i> 2 Days Delivery
+                        <i class="fa-solid fa-bolt"></i> Unlimited Revision
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid" style="color: black;">
+        <hr>
+    </div>
+
+
+    <div class="container-fluid blog-section">
+        <p style="text-transform: uppercase;color: #d00646;">Visit my blog and keep your feedback</p>
+        <h1>My Blog</h1>
+        <div class="row mt-4 p-5">
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <div class="blogimg">
+                        <img src="images/marketing-young-cute-business-lady-striped-shirt-office-showing-raising-results-1-340x250.jpg"
+                            alt="Blog 1">
+                    </div>
+                    <div class="title-time">
+                        <p class="category">Development</p>
+                        <p class="blog-time"><i class="fa-regular fa-clock"></i> 4 min read</p>
+                    </div>
+                    <h4>The Best Ways to Do Market Research For Your Business Plan.</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <div class="blogimg">
+                        <img src="images/pretty-curly-young-woman-writing-notes-startup-project-340x250.jpg"
+                            alt="Blog 2">
+                    </div>
+                    <div class="title-time">
+                        <p class="category">Quote</p>
+                        <p class="blog-time"><i class="fa-regular fa-clock"></i> 4 min read</p>
+                    </div>
+                    <h4>The Easiest Way to Become a Successful Writer and Authors.</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <div class="blogimg">
+                        <img src="images/road-sign-direction-perforated-paper-arrow-340x250.jpg" alt="Blog 3">
+                    </div>
+                    <div class="title-time">
+                        <p class="category">Technician</p>
+                        <p class="blog-time"><i class="fa-regular fa-clock"></i> 4 min read</p>
+                    </div>
+                    <h4>The Quickest Way to Deliver Your Message? Make It Visual.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="color: black;">
+        <hr>
+    </div>
+
+
+    <div class="contact-container">
+        <p class="text-center" style="color: #c70844;margin-top: 50px;">CONTECT</p>
+        <h1 class="mb-5 text-center" style="font-size: 70px;">Contact With Me</h1>
+
+        <div class="row g-4 justify-content-center align-items-center">
+            <div class="col-md-5">
+                <div class="contact-card text-center">
+                    <div style="overflow: hidden;">
+                        <img src="images/contact1-300x188.png" class="card-img-top rounded" alt="Profile Image">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title fw-bold">Nevine Acotanza</h2>
+                        <p class="fs-5" style="margin-top: 10px;color: #808792;">Chief Operating Officer</p>
+                        <p style="font-size: 20px;color: #808792;">I am available for freelance work. Connect with me
+                            via and call in to my account.</p>
+                        <p style="color: #808792;">Phone: <strong class="redline" style="color: white;"> +012 345 678
+                                90</strong></p>
+                        <p style="color: #808792;">Email: <strong class="redline" style="color: white;">
+                                admin@example.com</strong></p>
+                        <div class="social-icons contact-social-icons">
+                            <p>FIND WITH ME</p>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="contact-card">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Your Name</label>
+                                <input type="text" class="contact-form-control form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Phone Number</label>
+                                <input type="text" class="contact-form-control form-control">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="contact-form-control form-control">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Subject</label>
+                                <input type="text" class="contact-form-control form-control">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Your Message</label>
+                                <textarea class="contact-form-control form-control" rows="13"></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="contact-btn-dark w-100">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="color: black;margin-top: 70px;">
+        <hr>
+    </div>
+
+    <footer class="custom-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-logo">
+                        <img src="images/logos-circle.png" alt="Logo">
+                        <span>INBIO</span>
+                    </div>
+                    <div class="social-icons contact-social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="footer-social-icons mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-links">
+                    <h5>QUICK LINK</h5>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-links">
+                    <h5>RESOURCES</h5>
+                    <ul>
+                        <li><a href="#">Authentication</a></li>
+                        <li><a href="#">System Status</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Over Right</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-links">
+                    <h5>DEVELOPERS</h5>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Authentication</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Open Source</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container-fluid" style="color: black;">
+                <hr>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025. All rights reserved by Rainbow-Themes</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+</html>
